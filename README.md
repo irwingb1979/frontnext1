@@ -2,6 +2,9 @@
 
 This is a Next.js application, serving as the frontend for a web project. It leverages modern React features and incorporates interactive elements using GSAP and visually appealing components with Tailwind CSS and Font Awesome.
 
+# Demo
+You can explore the live demo of the frontend at the following link: [Live Demo](https://frontnext1.onrender.com/).
+
 ## Table of Contents
 
 - [Features](#features)
