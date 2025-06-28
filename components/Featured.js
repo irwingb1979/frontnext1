@@ -75,7 +75,9 @@ const Featured = () => {
     }, []);
     const [aboutBody, setAboutBody] = useState({});
     useEffect(() => {
-        fetch('http://localhost:5000/api/body/')
+        // fetch('http://localhost:5000/api/body/')
+        // Fetching data from the backend API
+        fetch('https://backend2-y2tn.onrender.com/api/body/')
             .then(response => response.json())
             .then(data => setAboutBody(data))
             .catch(error => console.error('Error fetching about data:', error));

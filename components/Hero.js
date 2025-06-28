@@ -13,7 +13,8 @@ const Hero = () => {
 
     const [heroData, setHeroData] = useState({});
     useEffect(() => {
-        fetch('http://localhost:5000/api/hero')
+        // fetch('http://localhost:5000/api/hero')
+        fetch('https://backend2-y2tn.onrender.com/api/hero')
             .then(response => response.json())
             .then(data => setHeroData(data))
             .catch(error => console.error('Error fetching hero data:', error));
