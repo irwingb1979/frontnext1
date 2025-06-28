@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root {
+    --primary-color: #ff4d4d;
+    --secondary-color: #ffb3b3;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.section {
+    /* padding: 100px 0; */
+    min-height: 100vh;
+}
+
+#hero {
+    position: relative;
+    padding-top: 2rem;
+}
+
+#hero .title {
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 30px;
+}
+
+#hero .title::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#hero .bodytext {
+    font-size: 100px;
+    font-weight: 900;
+    /* max-width: 550px; */
+    line-height: 100px;
+}
+
+#hero span {
+    color: #ff4d4d;
+}
+#hero .arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: var(--primary-color) solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+#top-bar .logo-container {
+    font-weight: 900;
+    font-size: 30px;
+    background: linear-gradient(0deg, #ff4d4d, #ffb3b3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top-bar .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#top-bar .contact-link {
+    background: var(--primary-color);
+}
+#top-bar .contact-link:hover {
+    background: var(--secondary-color);
+}
+.titlesection {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 100px;
+}
+.subtitlesection {
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 30px;
+}
+.subtitlesection::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.titleback {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0.1;
+    font-size: 20rem;
+    font-weight: 900;
+    line-height: normal;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.box {
+    background: var(--primary-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.boxcolor {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: block;
+}
+
+.gradient-green {
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.project-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    min-height: 400px;
+    margin-bottom: 10px;
+}
